@@ -6,6 +6,7 @@ Unleash the full potential of your media library with Omni Play, the cutting-edg
 Experience media without boundaries. Omni Play isn't just a player; it's your intelligent, cross-platform command center for all your videos. Say goodbye to fragmented libraries and manual chores. We've integrated state-of-the-art Artificial Intelligence to automatically perfect your metadata and intuitively organize your vast collection, ensuring effortless discovery and a consistently brilliant viewing experience, no matter your operating system.
 
 Key Features that Redefine Your Viewing:
+
 **Omni-Platform Compatibility:** Whether you're on Windows, macOS, or Linux, Omni Play offers a consistent, high-performance experience, bringing universal media playback to your desktop of choice.
 **Omni-Format Support:** Play virtually any video or audio format imaginable, straight out of the box. Our powerful engine handles a comprehensive range of codecs, so you never have to worry about compatibility.
 Stunning, Modern UI: Immerse yourself in a beautifully designed interface that's both intuitive and visually captivating. We've meticulously crafted a user experience that's fluid, responsive, and a true joy to interact with, making your content shine.
