@@ -1,22 +1,54 @@
-# OmniPlay: Your Smart, Stunning, and Seamless Media Hub for Every Platform
+# React + TypeScript + Vite
 
-Unleash the full potential of your media library with Omni Play, the cutting-edge video player meticulously crafted for Windows, macOS, and Linux. Breaking free from platform limitations, Omni Play delivers the robust, feature-rich playback you demand, all wrapped in a breathtakingly modern and intuitive user interface.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Experience media without boundaries. Omni Play isn't just a player; it's your intelligent, cross-platform command center for all your videos. Say goodbye to fragmented libraries and manual chores. We've integrated state-of-the-art Artificial Intelligence to automatically perfect your metadata and intuitively organize your vast collection, ensuring effortless discovery and a consistently brilliant viewing experience, no matter your operating system.
+Currently, two official plugins are available:
 
-Key Features that Redefine Your Viewing:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-**Omni-Platform Compatibility:** Whether you're on Windows, macOS, or Linux, Omni Play offers a consistent, high-performance experience, bringing universal media playback to your desktop of choice.
+## Expanding the ESLint configuration
 
-**Omni-Format Support:** Play virtually any video or audio format imaginable, straight out of the box. Our powerful engine handles a comprehensive range of codecs, so you never have to worry about compatibility.
-Stunning, Modern UI: Immerse yourself in a beautifully designed interface that's both intuitive and visually captivating. We've meticulously crafted a user experience that's fluid, responsive, and a true joy to interact with, making your content shine.
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-**AI-Powered Metadata Perfection:** Leave the tedious work to intelligent automation. Omni Play's integrated AI analyzes your video files, automatically enriching and correcting metadata (titles, genres, release dates, cast, summaries, and more) for a flawlessly cataloged library.
+```js
+export default tseslint.config({
+  extends: [
+    // Remove ...tseslint.configs.recommended and replace with this
+    ...tseslint.configs.recommendedTypeChecked,
+    // Alternatively, use this for stricter rules
+    ...tseslint.configs.strictTypeChecked,
+    // Optionally, add this for stylistic rules
+    ...tseslint.configs.stylisticTypeChecked,
+  ],
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
+```
 
-**Intelligent Library Organization (API-driven):** Harness the power of AI to effortlessly sort, categorize, and even suggest relevant groupings for your vast collection. Our robust API integration ensures smart, scalable organization that adapts and evolves with your media.
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-**Intuitive Playback Controls:** Enjoy a refined and responsive playback experience with easily accessible controls, designed for ultimate user comfort and efficiency across all supported platforms.
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-**Lightweight & Optimized Performance:** Engineered for speed and efficiency, Omni Play delivers smooth, high-quality playback even with demanding 4K content, without bogging down your system.
-
-Omni Play is more than just a media player; it's a unified, intelligent ecosystem designed to simplify and elevate your entire video library experience. It's time to experience your media smarter, wherever you are.
+export default tseslint.config({
+  plugins: {
+    // Add the react-x and react-dom plugins
+    'react-x': reactX,
+    'react-dom': reactDom,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended typescript rules
+    ...reactX.configs['recommended-typescript'].rules,
+    ...reactDom.configs.recommended.rules,
+  },
+})
+```
