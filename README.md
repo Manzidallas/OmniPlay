@@ -1,5 +1,7 @@
 # OmniPlay: Your Smart, Stunning, and Seamless Media Hub for Every Platform
 
+![Design Preview](https://cdn.dribbble.com/userupload/21150483/file/original-cd1b69d5671ca092ef92ca7b0d661cf3.png?resize=1024x768&vertical=center)
+
 Unleash the full potential of your media library with Omni Play, the cutting-edge video player meticulously crafted for Windows, macOS, and Linux. Breaking free from platform limitations, Omni Play delivers the robust, feature-rich playback you demand, all wrapped in a breathtakingly modern and intuitive user interface.
 
 Experience media without boundaries. Omni Play isn't just a player; it's your intelligent, cross-platform command center for all your videos. Say goodbye to fragmented libraries and manual chores. We've integrated state-of-the-art Artificial Intelligence to automatically perfect your metadata and intuitively organize your vast collection, ensuring effortless discovery and a consistently brilliant viewing experience, no matter your operating system.
